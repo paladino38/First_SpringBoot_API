@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e03b9c9c-34c7-4f48-b880-be4c4cf31e31" name="Changes" comment="Crypto app with jpa classes">
+    <list default="true" id="e03b9c9c-34c7-4f48-b880-be4c4cf31e31" name="Changes" comment="Get by name updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/CoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CoinController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/CoinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/CoinRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730649928065</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Get by name updated">
+      <option name="closed" value="true" />
+      <created>1730816819365</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730816819365</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,7 +93,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Crypto app with jpa" />
     <MESSAGE value="Crypto app with jpa classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crypto app with jpa classes" />
+    <MESSAGE value="Get by name updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get by name updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
