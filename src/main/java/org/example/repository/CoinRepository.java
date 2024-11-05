@@ -41,24 +41,17 @@ public class CoinRepository {
         TypedQuery<CoinTransactionDTO>query = entityManager.createQuery(jpql,CoinTransactionDTO.class);
         return query.getResultList();
     }
-/*
-    public List<CoinTransactionDTO> getByName(String name){
-        Object[] attr = new Object[]{ name};
-        return jdbcTemplate.query(SELECT_BY_NAME, new RowMapper<CoinTransactionDTO>() {
-            @Override
-            public CoinTransactionDTO mapRow(ResultSet rs, int rowNum) throws SQLException {
-                CoinTransactionDTO Coin = new CoinTransactionDTO();
-                Coin.setId(rs.getInt("id"));
-                Coin.setDateTime(rs.getTimestamp("datetime"));
-                Coin.setName(rs.getString("name"));
-                Coin.setPrice(rs.getBigDecimal("price"));
-                Coin.setQuantity(rs.getBigDecimal("quantity"));
-                System.out.println(rs.getTimestamp("datetime") + " i'M HERE ");
-                return Coin;
-            }
-        },attr);
+
+    public List<coin> getByName(String name){
+        String jpql = "select c from coin c where c.name like :name";
+        TypedQuery<coin>query = entityManager.createQuery(jpql,coin.class);
+        query.setParameter("name","%" + name +"%");
+        return  query.getResultList();
+
     }
 
+
+    /*
     public int  remove (int id){
         jdbcTemplate.update(DELETE,id);
         return 1;
